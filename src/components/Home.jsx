@@ -44,7 +44,7 @@ const Home = () => {
                 <Card image={gif} headline={"Patrick."} brief={"Lives in the sea!"} />
             </section>
             <section className='mt-[40px] flex flex-row gap-6'>
-                <Button text={"Click Me!"} />
+                <Button text={"Click Here!"} />
                 <Button text={"Don't Click Me!"} />
             </section>
             <section className='mt-[40px] w-[400px]'>

@@ -1,14 +1,23 @@
 import { render, screen } from "@testing-library/react"
-import App from "./App"
+import Home from "./components/Home"
 
-// import matchers from "@testing-library/jest-dom"
-// expect.extend(matchers)
-
-it("Should have 'Lives in the sea!", () => {
-    // render(<App />)
-    // const message = screen.queryByText(/Patrick/i)
-    // expect(message).toBeVisible()
-    render(<App />)
-    const message = screen.queryByText(/Lives in the zeeee/i)
-    expect(message).toBeVisible()
+it("Should contain 'Click Me!'", () => {
+    render(<Home />)
+    const message = screen.queryByText(/Click Here!/i)
+    expect(message).toBeVisible
 })
+
+
+
+
+
+
+
+// import { render, screen } from "@testing-library/react"
+// import App from "./App"
+
+// it("Should have 'Lives in the sea!", () => {
+//     render(<App />)
+//     const message = screen.queryByText(/Hello World!/i)
+//     expect(message).toBeVisible()
+// })
